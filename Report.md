@@ -47,6 +47,13 @@ FBRD = Integer(0.1667 * 64 + 0.5 ) = 11
 
 ### Measurements and Results:
 ![100khz](https://github.com/PEG-IITDH/lab7-pwm-generation-ShwetaKiranTotla/assets/109335487/68d458eb-4b55-4902-ba21-0e0b934b262f)
+![Green LED](green_led.jpg)
+The Green LED turns on when AA is received.  
+![Blue LED](blue_led.jpg)
+The Blue LED turns on when F0 is received.  
+![Red LED](red_led.jpg)
+The Red LED turns on when an error occurs during the transmission.  
+  
 
 
 ### Discussion and Conclusions:
