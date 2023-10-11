@@ -1,0 +1,23 @@
+flowchart TD
+    subgraph Main Loop
+    E[Is SW1 Pressed?] -->|Yes| F[Transmit 0xF0 over UART]
+    F --> G[Wait for UART Transmission to Complete]
+    G --> E
+    E -->|No| H[Is SW2 Pressed?]
+    H -->|Yes| I[Transmit 0xAA over UART]
+    I --> J[Wait for UART Transmission to Complete]
+    J --> H
+    H -->|No| K[Is Data Received on UART5?]
+    K -->|Yes| L[Read Received Data]
+    L --> M[Is Data 0xAA?]
+    M -->|Yes| N[Turn LED GREEN]
+    N --> K
+    M -->|No| O[Is Data 0xF0?]
+    O -->|Yes| P[Turn LED BLUE]
+    P --> K
+    R[Any Error] -->Q[Turn LED RED]
+    K --> L
+    K -->|No| End[End]
+    end
+
+    
