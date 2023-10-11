@@ -4,7 +4,7 @@
 * Divya Sharma [ee23mt005@iitdh.ac.in] 
 * Shweta Totla [200030053@iitdh.ac.in]
 * Group: 02 <br>
-* [11-10-2023]
+* Date 11-10-2023
 
 ### Problem Statement:
 Program your microcontroller to transmit:  
@@ -30,7 +30,7 @@ Also if there are any errors, then the LED turns RED.
 * Variables are used to keep track of the number of receptions, tranmsmissions and errors in one communication cycle (till is reset occurs).  
 * LEDs use a Read Modify Write (instead of Write), so if f0 is transmitted followed by aa, then the LED would be Green+Blue. To make the LED blue only, a write operation "GPIO_PORTF_DATA_R = BLUE_LED;" instead of "GPIO_PORTF_DATA_R |= BLUE_LED;" can be used.  
 
-**Calculations**
+**Calculations**  
 Bit Rate Division (BRD) Factor Calculation:
 BRD = Clock_frequency/(ClkDiv * Baud Rate)  
 Here ClkDiv = 16 because HSE (High Speed Enable) in UARTCTL is 0 (if it's 1, then ClkDiv=8).  
@@ -43,7 +43,7 @@ FBRD = Integer(0.1667 * 64 + 0.5 ) = 11
 
 ### Block diagram / Flowchart:
 
-![Flow Chart](flow_chart.JPG)
+![Flow Chart](./flow_chart.JPG)
 
 
 
@@ -61,7 +61,7 @@ Each bit is expected to take 104us for transmission and the measured values matc
 ![aa_4.jpg](aa_4.jpg) 4th, 5th, 6th and 7th bit measurement.  
 ![aa_5.jpg](aa_5.jpg) 8th bit, parity and stop bit measurement.  
 
-**0xF0**
+**0xF0**  
 ![f0_1.jpg](f0_1.jpg) Start bit and 1st nibble measurement.  
 ![f0_2.jpg](f0_1.jpg) 2nd nibble, parity and stop bit measurement.  
 <br>
