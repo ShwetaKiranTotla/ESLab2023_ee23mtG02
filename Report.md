@@ -55,7 +55,7 @@ As the stop bit is 1 and the UART line goes back to 1 (or Vdd) after transmissio
 Each bit is expected to take 104us for transmission and the measured values match the expected values.  
 
 **0xAA**  
-![aa_1.jpg](aa_1.jpg) Start bit and first bit measurement.  
+![aa_1.jpg](aa_1) Start bit and first bit measurement.  
 ![aa_2.jpg](aa_2.jpg) Second bit measurement.  
 ![aa_3.jpg](aa_3.jpg) Third bit measurement. 
 ![aa_4.jpg](aa_4.jpg) 4th, 5th, 6th and 7th bit measurement.  
@@ -67,7 +67,7 @@ Each bit is expected to take 104us for transmission and the measured values matc
 <br>
 ![0_byte.jpg](0_byte.jpg) Measurement of the 0 byte that is transmitted following the data byte.  
 
-**LED**  
+**LED**    
 ![Green LED](green_led.jpg)  
 The Green LED turns on when AA is received.  
 ![Blue LED](blue_led.jpg)  
