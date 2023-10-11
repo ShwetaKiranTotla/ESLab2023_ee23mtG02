@@ -42,9 +42,9 @@ FBRD = Integer(Fractional(BRD) * 64 + 0.5)
 FBRD = Integer(0.1667 * 64 + 0.5 ) = 11  
 
 ### Block diagram / Flowchart:
-<p>
-![Flow Chart](./flow_chart.JPG)
-</p>
+  
+![Flow Chart](flow_chart.JPG)  
+
 
 
 ### Measurements and Results:
