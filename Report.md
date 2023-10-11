@@ -41,7 +41,7 @@ FBRD = Integer(0.1667 * 64 + 0.5 ) = 11
 
 ### Block diagram / Flowchart:
 
-![Flow Chart](flow_chart_1.JPG)
+![Flow Chart](flow_chart.JPG)
 
 
 
